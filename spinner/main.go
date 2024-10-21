@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+<<<<<<< HEAD
 func main() {
 	go spinner(100 * time.Millisecond)
 	const n = 45
@@ -12,6 +13,8 @@ func main() {
 	fmt.Printf("\nFibonacci(%d) = %d\n", n, fibN)
 }
 
+=======
+>>>>>>> cb95587042fe112a9834fcc903d6e22211b5d421
 func spinner(delay time.Duration) {
 	for {
 		for _, r := range `-\|/` {
@@ -27,3 +30,13 @@ func fib(x int) int {
 	}
 	return fib(x-1) + fib(x-2)
 }
+<<<<<<< HEAD
+=======
+
+func main() {
+	go spinner(100 * time.Millisecond)
+	const n = 50
+	fibN := fib(n)
+	fmt.Printf("\rFibonachi(%d) = %d\n", n, fibN)
+}
+>>>>>>> cb95587042fe112a9834fcc903d6e22211b5d421
